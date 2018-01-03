@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Chaos.NaCl.Blake2B.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Blake2Core" Version="1.0.0" />
+  </ItemGroup>
+</Project>
