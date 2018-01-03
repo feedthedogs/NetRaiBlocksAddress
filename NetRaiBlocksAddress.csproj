@@ -1,0 +1,85 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\CryptoBytes.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Ed25519.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\MontgomeryCurve25519.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\OneTimeAuth.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Poly1305.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Sha512.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\XSalsa20Poly1305.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Array16.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Array8.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\ByteIntegerConverter.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\InternalAssert.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Poly1305Donna.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Sha512Internal.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\FieldElement.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\GroupElement.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\base.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\base2.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\d.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\d2.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_0.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_1.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_add.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_cmov.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_cswap.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_frombytes.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_invert.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_isnegative.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_isnonzero.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_mul.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_mul121666.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_neg.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_pow22523.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_sq.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_sq2.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_sub.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\fe_tobytes.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_add.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_double_scalarmult.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_frombytes.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_madd.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_msub.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_p1p1_to_p2.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_p1p1_to_p3.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_p2_0.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_p2_dbl.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_p3_0.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_p3_dbl.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_p3_to_cached.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_p3_to_p2.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_p3_tobytes.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_precomp_0.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_scalarmult_base.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_sub.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\ge_tobytes.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\keypair.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\open.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\sc_clamp.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\sc_mul_add.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\sc_reduce.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\scalarmult.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\sign.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Ed25519Ref10\sqrtm1.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Salsa\Salsa20.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Internal\Salsa\SalsaCore.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Properties\AssemblyInfo.cs" />
+    <Compile Remove="Chaos.NaCl.Blake2B.Core\Properties\AssemblyInfoFull.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Chaos.NaCl.Blake2B.Core\README.md" />
+    <None Remove="Chaos.NaCl.Blake2B.Core\Internal\Salsa\replace regex.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Chaos.NaCl.Blake2B.Core\Chaos.NaCl.Blake2B.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Blake2Core" Version="1.0.0" />
+  </ItemGroup>
+</Project>
