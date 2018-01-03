@@ -8,16 +8,16 @@ namespace NetRaiBlocksAddress
     public class RaiWallet
     {
         readonly string _base32Alphabet = "13456789abcdefghijkmnopqrstuwxyz";
-        byte[] _seed;
+        public readonly byte[] Seed;
 
         public RaiWallet()
         {
-            _seed = GenerateSeed();
+            Seed = GenerateSeed();
         }
 
         public RaiWallet(byte[] seed)
         {
-            _seed = seed;
+            Seed = seed;
         }
 
         public string PublicAddress(int index = 0)
@@ -72,7 +72,7 @@ namespace NetRaiBlocksAddress
                 OutputSizeInBytes = 32
             };
             var hasher = Blake2B.Create(blake2bConfig);
-            hasher.Update(_seed);
+            hasher.Update(Seed);
             var indexBytes = BitConverter.GetBytes(index).Reverse().ToArray();
             hasher.Update(indexBytes);
             return hasher.Finish();
